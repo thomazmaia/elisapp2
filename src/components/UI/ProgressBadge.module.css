@@ -1,0 +1,18 @@
+.badge {
+  min-width: 150px;
+  display: grid;
+  gap: 4px;
+  background: linear-gradient(135deg, #4f46e5, #22c55e);
+  color: white;
+  border-radius: 22px;
+  padding: 16px 18px;
+  box-shadow: var(--shadow-soft);
+}
+
+.badge strong {
+  font-size: 1.5rem;
+}
+
+.large strong {
+  font-size: 2rem;
+}

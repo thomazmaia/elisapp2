@@ -1,0 +1,183 @@
+.page {
+  display: grid;
+  gap: 22px;
+}
+
+.hero {
+  background:
+    radial-gradient(circle at top right, rgba(255, 255, 255, 0.9), transparent 34%),
+    linear-gradient(135deg, rgba(79, 70, 229, 0.14), rgba(255, 255, 255, 0.98));
+  border-radius: 32px;
+  padding: 24px;
+  box-shadow: var(--shadow-soft);
+}
+
+.backButton {
+  min-height: 48px;
+  border: none;
+  border-radius: 16px;
+  padding: 0 16px;
+  background: rgba(255, 255, 255, 0.85);
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.heroGrid {
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: 20px;
+  align-items: center;
+  margin-top: 16px;
+}
+
+.chapterKicker {
+  margin: 0;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--primary);
+  font-size: 0.78rem;
+}
+
+.heroText h1 {
+  margin: 6px 0 8px;
+  font-size: clamp(2rem, 3.4vw, 2.6rem);
+}
+
+.heroText h2 {
+  margin: 0 0 8px;
+}
+
+.heroText p {
+  margin: 0;
+  color: var(--text-soft);
+}
+
+.metaphorCard {
+  min-height: 220px;
+  border-radius: 28px;
+  padding: 24px;
+  background: rgba(255, 255, 255, 0.82);
+  display: grid;
+  place-items: center;
+  text-align: center;
+  gap: 14px;
+}
+
+.bigEmoji {
+  font-size: 4.8rem;
+}
+
+.interpreterBox,
+.exerciseCard {
+  background: rgba(255, 255, 255, 0.96);
+  border-radius: 28px;
+  padding: 22px;
+  box-shadow: var(--shadow-soft);
+}
+
+.interpreterBox {
+  background: #fff8db;
+}
+
+.interpreterBox strong,
+.interpreterBox p {
+  margin: 0;
+}
+
+.interpreterBox p {
+  margin-top: 8px;
+  color: #665423;
+}
+
+.section {
+  display: grid;
+  gap: 16px;
+}
+
+.sectionHeader h2,
+.sectionHeader p {
+  margin: 0;
+}
+
+.sectionHeader p {
+  color: var(--text-soft);
+}
+
+.conceptList {
+  display: grid;
+  gap: 16px;
+}
+
+.exerciseTop,
+.exerciseFooter {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  align-items: center;
+}
+
+.exerciseTop p {
+  margin: 6px 0 0;
+  color: var(--text-soft);
+}
+
+.doneChip,
+.nextButton {
+  min-height: 48px;
+  border-radius: 18px;
+  border: none;
+  padding: 0 16px;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 800;
+}
+
+.doneChip {
+  background: rgba(34, 197, 94, 0.14);
+  color: #166534;
+}
+
+.nextButton {
+  background: var(--primary);
+  color: white;
+}
+
+.exerciseCard {
+  display: grid;
+  gap: 20px;
+}
+
+.exerciseDots {
+  display: flex;
+  gap: 10px;
+}
+
+.dot {
+  width: 18px;
+  height: 18px;
+  border: none;
+  border-radius: 999px;
+  background: rgba(79, 70, 229, 0.18);
+}
+
+.dotActive {
+  background: var(--primary);
+}
+
+.dotDone {
+  box-shadow: inset 0 0 0 4px rgba(34, 197, 94, 0.5);
+}
+
+@media (max-width: 900px) {
+  .heroGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .exerciseTop,
+  .exerciseFooter {
+    flex-direction: column;
+    align-items: stretch;
+  }
+}

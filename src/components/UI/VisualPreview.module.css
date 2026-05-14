@@ -1,0 +1,13 @@
+.wrapper {
+  display: grid;
+  gap: 10px;
+}
+
+.frame {
+  width: 100%;
+  min-height: 150px;
+  border: none;
+  border-radius: 20px;
+  background: white;
+  box-shadow: var(--shadow-soft);
+}

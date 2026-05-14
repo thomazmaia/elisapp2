@@ -1,0 +1,152 @@
+.exerciseBody {
+  display: grid;
+  gap: 16px;
+}
+
+.prompt {
+  margin: 0;
+  color: var(--text-soft);
+}
+
+.bank,
+.slot,
+.matchTarget {
+  background: rgba(79, 70, 229, 0.06);
+  border: 2px dashed rgba(79, 70, 229, 0.22);
+  border-radius: 22px;
+  padding: 16px;
+}
+
+.bank {
+  min-height: 88px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  align-items: center;
+}
+
+.slotRow {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 12px;
+}
+
+.slot {
+  min-height: 88px;
+  display: grid;
+  place-items: center;
+}
+
+.slotHint {
+  color: var(--text-soft);
+  font-size: 0.92rem;
+}
+
+.chip {
+  min-height: 48px;
+  border: none;
+  border-radius: 16px;
+  padding: 10px 14px;
+  background: white;
+  box-shadow: var(--shadow-soft);
+  font-family: 'Fira Code', monospace;
+  font-size: 0.94rem;
+  font-weight: 700;
+}
+
+.dragging {
+  opacity: 0.72;
+}
+
+.slotActive {
+  border-color: var(--primary);
+  background: rgba(79, 70, 229, 0.1);
+}
+
+.matchGrid {
+  display: grid;
+  grid-template-columns: 0.9fr 1.1fr;
+  gap: 16px;
+}
+
+.matchColumn {
+  display: grid;
+  gap: 12px;
+}
+
+.matchTarget {
+  min-height: 86px;
+  display: grid;
+  gap: 10px;
+}
+
+.codeSentence {
+  padding: 18px;
+  border-radius: 22px;
+  background: #111827;
+  color: #eff6ff;
+  font-family: 'Fira Code', monospace;
+  line-height: 1.9;
+  overflow-x: auto;
+}
+
+.inlineBlank {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 78px;
+  min-height: 52px;
+  margin: 0 6px;
+  padding: 0 8px;
+  border-radius: 16px;
+  border: 2px dashed rgba(125, 211, 252, 0.6);
+}
+
+.sceneHeader {
+  display: grid;
+  gap: 4px;
+}
+
+.sceneHeader span {
+  color: var(--text-soft);
+}
+
+.scene {
+  position: relative;
+  min-height: 320px;
+  border-radius: 28px;
+  background: linear-gradient(180deg, #dbeafe, #ffffff);
+  overflow: hidden;
+  box-shadow: var(--shadow-soft);
+}
+
+.sceneArea {
+  position: absolute;
+  border: 2px solid transparent;
+  border-radius: 22px;
+  background: rgba(255, 255, 255, 0.72);
+  display: grid;
+  place-items: center;
+  gap: 6px;
+  min-width: 48px;
+  min-height: 48px;
+}
+
+.sceneArea span {
+  font-size: 1.6rem;
+}
+
+.sceneArea small {
+  font-weight: 800;
+}
+
+.correctArea {
+  border-color: var(--success);
+  background: rgba(34, 197, 94, 0.14);
+}
+
+@media (max-width: 860px) {
+  .matchGrid {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,31 @@
+.wrap {
+  display: grid;
+  gap: 14px;
+}
+
+.codeBlock {
+  display: grid;
+  gap: 10px;
+}
+
+.code {
+  margin: 0;
+  padding: 18px;
+  border-radius: 20px;
+  background: #111827;
+  color: #eff6ff;
+  overflow-x: auto;
+  box-shadow: var(--shadow-soft);
+}
+
+.code :global(.tag) {
+  color: #7dd3fc;
+}
+
+.code :global(.attr) {
+  color: #f9a8d4;
+}
+
+.code :global(.value) {
+  color: #fcd34d;
+}
